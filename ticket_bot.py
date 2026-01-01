@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 
-TOKEN = ""
+TOKEN = os.getenv("TOKEN")
 TICKET_CATEGORY_NAME = "tickets"
 STAFF_ROLE_NAME = "+"
 
@@ -115,6 +115,7 @@ async def ticket(ctx):
         color=0x3498db
     )
     await ctx.send(embed=embed, view=TicketView())
+
 
 
 bot.run(TOKEN)
