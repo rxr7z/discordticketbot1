@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 
+import os
 TOKEN = os.getenv("TOKEN")
 TICKET_CATEGORY_NAME = "tickets"
 STAFF_ROLE_NAME = "+"
@@ -119,3 +120,4 @@ async def ticket(ctx):
 
 
 bot.run(TOKEN)
+
